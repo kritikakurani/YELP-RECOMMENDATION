@@ -12,7 +12,7 @@ business_subset.data: a subset of business info analyzed in our project, a list 
 
 location.data: all business location information, including business_id, address(street, city, state, postal_code), latitude, longitude.
 
-rating_subset.data: a subset of data used in our project, stored in a list of [review_id, user_id, business_id, stars].
+rating_subset.data: a subset of data used in our project, stored in a list of [review_id, business_id, user_id, stars].
 rating_subset_training.data: rating training data used in our project.
 rating_subset_test.data: rating testing data used in our project.
 
