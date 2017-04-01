@@ -1,0 +1,25 @@
+##last updated by Ye on Mar. 31 2017##
+
+file used from yelp dataset:
+yelp_academic_dataset_business.json
+yelp_academic_dataset_checkin.json
+yelp_academic_dataset_review.json
+yelp_academic_dataset_user.json
+
+business.data: all business id, starts, review_count information stored in a list of [business_id, stars, review_count].
+business_name.data: all business names used in our project stored in list.
+business_subset.data: a subset of business info analyzed in our project, a list of [business_id, stars, review_count].
+
+location.data: all business location information, including business_id, address(street, city, state, postal_code), latitude, longitude.
+
+rating_subset.data: a subset of data used in our project, stored in a list of [review_id, user_id, business_id, stars].
+rating_subset_training.data: rating training data used in our project.
+rating_subset_test.data: rating testing data used in our project.
+
+relation_subset.data: relationship between yelp users, stored in a list of [user_id, [friend_list]].
+
+review_subset.data: review data related to our project, stored in a list of [review_id, text].
+review_subset_training: a subset of review data used for training, same review_id are rating_subset_training.data.
+
+user_name: all user names used in our project stored in list.
+user_subset: a subset of users info analyzed in our project, a list of [user_id, review_count, average_stars].
