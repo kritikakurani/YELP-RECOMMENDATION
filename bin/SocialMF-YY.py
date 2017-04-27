@@ -65,8 +65,6 @@ Times = 50
 DocWord = 300
 DocTopic = 5
 
-sim_val = 0.85 # default = 0.85
-vip_val = 0.2
 lbd1 = 0.5 # Similarity effect 
 lbd2 = 0.5 # relation afftect
 lbd3 = 0.5 # VIP effect
@@ -128,14 +126,9 @@ for u in relation:
 # VIP matrix where Uij = 1 if uj is a VIP and zero otherwise        
 for u in xrange(num_user):
     for v in xrange(num_user):
-        if Wi[v] > vip_val:
-            Uij[u][v] = 1
+        Uij[u][v] = Wi[v]
 
-TR = np.dot(Tij, Rij)
-TS = np.dot(Tij, Sij)
-UR = np.dot(Uij, Rij)
-US = np.dot(Uij, Sij)
-
+# user-user similarity
 Cos_norm = []
 for u in xrange(num_user):
     Cos_norm.append(math.sqrt(np.dot(Rij[u], Rij[u])))
@@ -148,6 +141,10 @@ for i in xrange(num_user):
         else: 
             Cos[i][j] = 0
 
+TR = np.dot(Tij, Rij)
+TS = np.dot(Tij, Sij)
+UR = np.dot(Uij, Rij)
+US = np.dot(Uij, Sij)
 CR = np.dot(Cos, Rij)
 CS = np.dot(Cos, Sij)
 
@@ -161,29 +158,47 @@ Vij3 = csr_matrix((val,(row,col)), shape=(num_user,num_business)).toarray()
 
 for i in xrange(num_user):
     for j in xrange(num_business):
-        if US[i][j]: Vij3[i][j] = lbd3*UR[i][j]/US[i][j]
-        if TS[i][j]: Vij2[i][j] = lbd2*TR[i][j]/TS[i][j]
-        if CS[i][j]: Vij1[i][j] = lbd1*CR[i][j]/CS[i][j]   
+        if TS[i][j]: Vij1[i][j] = lbd1*TR[i][j]/TS[i][j]
+        if US[i][j]: Vij2[i][j] = lbd2*UR[i][j]/US[i][j]
+        if CS[i][j]: Vij3[i][j] = lbd3*CR[i][j]/CS[i][j]   
 
 row = np.array([])
 col = np.array([])
 val = np.array([])
-SocialIn = csr_matrix((val,(row,col)), shape=(num_user,num_business)).toarray()
+SocialIn1 = csr_matrix((val,(row,col)), shape=(num_user,num_business)).toarray()
+SocialIn2 = csr_matrix((val,(row,col)), shape=(num_user,num_business)).toarray()
+SocialIn3 = csr_matrix((val,(row,col)), shape=(num_user,num_business)).toarray()
 
 for i in xrange(num_user):
     for j in xrange(num_business):
-        val = Ubb[i][j] + (Vij1[i][j] + Vij2[i][j] + Vij3[i][j])/3
+        val1 = Ubb[i][j] + Vij1[i][j]
+        val2 = Ubb[i][j] + Vij2[i][j]
+        val3 = Ubb[i][j] + Vij3[i][j]
         
-        if val < 1: val = 1
-        if val > 5: val = 5
-        SocialIn[i][j] = val1
+        if val1 < 1: val1 = 1
+        if val1 > 5: val1 = 5
+        if val2 < 1: val2 = 1
+        if val2 > 5: val2 = 5
+        if val3 < 1: val3 = 1
+        if val3 > 5: val3 = 5
+            
+        SocialIn1[i][j] = val1
+        SocialIn2[i][j] = val2
+        SocialIn3[i][j] = val3
 
-
-SocialInPd = []
+SocialInPd1 = []
+SocialInPd2 = []
+SocialInPd3 = []
 for r in xrange(num_test):
-    SocialInPd.append(SocialIn[test_user[r]][test_business[r]]) 
+    SocialInPd1.append(SocialIn1[test_user[r]][test_business[r]]) 
+    SocialInPd2.append(SocialIn2[test_user[r]][test_business[r]]) 
+    SocialInPd3.append(SocialIn3[test_user[r]][test_business[r]]) 
 
-SocialInPd_rmse = mean_squared_error(test_rating, SocialInPd1)   
+SocialInPd_rmse1 = mean_squared_error(test_rating, SocialInPd1)  
+SocialInPd_rmse2 = mean_squared_error(test_rating, SocialInPd2)  
+SocialInPd_rmse3 = mean_squared_error(test_rating, SocialInPd3)  
 
-print SocialInPd_rmse
-
+print "relation rmse =", SocialInPd_rmse1
+print "VIP rmse =", SocialInPd_rmse2
+print "similarity rmse =", SocialInPd_rmse3
+ 
