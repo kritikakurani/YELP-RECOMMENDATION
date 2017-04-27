@@ -1,0 +1,510 @@
+corpus = paper_format_data
+latentReg = 0.000000
+lambda = 0.100000
+K = 5
+
+nUsers = 4651, nItems = 2641, nRatings = 49486
+
+Error w/ offset term only (train/valid/test) = 1.033089/1.040211/1.013835 (0.020921)
+Error w/ offset and bias (train/valid/test) = 0.664996/0.873252/0.832246 (0.018599)
+
+..................................................
+energy after gradient step = 4681740.791101
+
+Top words for each topic:
+high (0.192329) cooked (0.169243) wish (0.164515) husband (0.164145) tasty (0.156368) counter (0.145943) seat (0.144958) favorite (0.140686) walking (0.140325) topped (0.138274) 
+bacon (0.157412) quite (0.143643) become (0.141509) show (0.140117) ice (0.137193) except (0.134002) own (0.133525) touch (0.132266) excellent (0.127337) bite (0.126151) 
+couldn (0.225530) won (0.206130) special (0.178509) heat (0.163175) salsa (0.158285) variety (0.155946) start (0.151459) book (0.142174) enjoy (0.140705) games (0.140229) 
+liked (0.205785) light (0.199107) instead (0.183082) creamy (0.153316) airport (0.150472) business (0.146040) toppings (0.144177) decor (0.144151) pork (0.141475) mostly (0.141344) 
+asked (0.202635) appetizer (0.200978) interesting (0.165580) movie (0.163632) might (0.162165) close (0.158711) places (0.155899) huge (0.148359) black (0.144579) music (0.140497) 
+Error (train/valid/test) = 0.723411/0.868703/0.825257 (0.019318)
+..................................................
+energy after gradient step = 4647991.004754
+
+Top words for each topic:
+tenders (0.398899) topped (0.375079) p (0.350181) craving (0.345340) fingers (0.335366) fair (0.331512) mom (0.326948) enjoying (0.316623) lovely (0.316494) sense (0.305159) 
+locations (0.359519) juicy (0.343738) cocktail (0.331878) crepe (0.326428) tvs (0.316380) brewery (0.312550) korean (0.310731) spices (0.306317) negative (0.304595) squash (0.303570) 
+owners (0.388674) basically (0.340968) summer (0.330472) california (0.328015) bowling (0.323486) roast (0.321287) kept (0.317290) cannot (0.310543) sticks (0.310397) catch (0.309867) 
+lol (0.341396) specialty (0.324869) hostess (0.319058) typically (0.302835) sports (0.302826) filling (0.298064) block (0.291429) fare (0.287492) nicely (0.278370) possibly (0.277248) 
+hear (0.401961) exactly (0.347041) incredibly (0.343703) ginger (0.329540) yeah (0.316231) lounge (0.308588) asking (0.306898) tots (0.300329) boring (0.299536) offered (0.298111) 
+Error (train/valid/test) = 0.629959/0.893570/0.842207 (0.019023)
+..................................................
+energy after gradient step = 4639974.919492
+
+Top words for each topic:
+tenders (0.674510) bagel (0.496697) gluten (0.491537) daily (0.471291) cinnamon (0.441685) iced (0.441346) attached (0.433799) flat (0.423007) crunchy (0.415135) allow (0.414664) 
+juicy (0.536727) likes (0.531744) brewery (0.531678) notice (0.492919) comfy (0.462755) cookie (0.453900) squash (0.443973) korean (0.429495) tasting (0.420321) chef (0.418476) 
+affordable (0.497508) closer (0.462313) overpriced (0.461070) credit (0.456075) basically (0.450067) roast (0.448741) california (0.448070) earlier (0.446466) delivered (0.441161) kept (0.437138) 
+2nd (0.601001) granted (0.564105) specialty (0.493597) lol (0.488811) pull (0.453548) meh (0.440492) ny (0.438919) homemade (0.424388) paper (0.421848) liking (0.421434) 
+ginger (0.662855) meatballs (0.556663) land (0.547759) lounge (0.536568) hear (0.512826) exactly (0.511562) fat (0.491717) deep (0.477247) beat (0.470055) random (0.464993) 
+Error (train/valid/test) = 0.485525/1.004748/0.949457 (0.021054)
+..................................................
+energy after gradient step = 4635480.761173
+
+Top words for each topic:
+tenders (0.794063) gluten (0.714687) daily (0.625740) hole (0.526838) dilworth (0.524928) flat (0.506570) allow (0.500232) church (0.495851) afternoon (0.493911) iced (0.486229) 
+juicy (0.717097) crepe (0.580129) using (0.563233) moment (0.534668) vietnamese (0.529592) tasting (0.522515) comfy (0.513259) cocktails (0.505118) hair (0.503138) crab (0.477627) 
+overpriced (0.684069) kept (0.643297) basically (0.577879) standing (0.565426) delivered (0.556896) orange (0.522580) queso (0.511608) unique (0.479383) layover (0.477853) due (0.467007) 
+granted (0.749255) 2nd (0.711066) specialty (0.696421) homemade (0.608904) e (0.560667) theater (0.514340) sign (0.487355) strong (0.482237) finish (0.481869) market (0.478382) 
+ginger (0.639415) grabbed (0.588875) excited (0.576556) deep (0.564560) banana (0.557210) dipping (0.544707) asking (0.542158) beat (0.533442) lines (0.524730) hear (0.520757) 
+Error (train/valid/test) = 0.401466/1.117191/1.054021 (0.024378)
+..................................................
+energy after gradient step = 4632179.794639
+
+Top words for each topic:
+daily (0.917722) tenders (0.873909) gluten (0.667111) simply (0.626907) liquor (0.612769) chicago (0.608721) afternoon (0.606700) complimentary (0.581795) plan (0.560357) cup (0.557913) 
+glasses (0.782458) juicy (0.765935) tasting (0.701727) spices (0.694685) vietnamese (0.684542) rate (0.640380) hair (0.617481) crepe (0.580850) smoked (0.572809) afraid (0.551091) 
+overpriced (0.790161) credit (0.738214) layover (0.684390) orange (0.680357) basically (0.648578) standing (0.622671) english (0.606374) row (0.591306) terminal (0.557916) noticed (0.554036) 
+specialty (0.782365) homemade (0.741238) 2nd (0.728469) granted (0.678801) lol (0.642878) forgot (0.633614) touch (0.632642) c (0.570256) others (0.563911) melted (0.552308) 
+lines (0.659978) grabbed (0.632606) dipping (0.627780) banana (0.622031) older (0.620331) class (0.615660) yellow (0.610664) excited (0.589789) ginger (0.574791) fat (0.540926) 
+Error (train/valid/test) = 0.352721/1.150860/1.090024 (0.025108)
+..................................................
+energy after gradient step = 4630521.088073
+
+Top words for each topic:
+daily (0.934272) tenders (0.874060) enjoying (0.706715) afternoon (0.681490) attached (0.671412) waffles (0.662536) shows (0.655562) liquor (0.650625) gluten (0.647743) phenomenal (0.643192) 
+juicy (0.843898) glasses (0.756002) rate (0.740783) vietnamese (0.717886) tasting (0.704279) spices (0.693981) appreciate (0.680959) hair (0.645391) serious (0.638397) cocktails (0.608484) 
+layover (0.745559) terminal (0.740737) slightly (0.695078) orange (0.671098) credit (0.669050) overpriced (0.659908) english (0.643947) crowd (0.617981) popcorn (0.607179) noticed (0.576519) 
+homemade (0.744319) specialty (0.676248) 2nd (0.666386) granted (0.642421) delish (0.640841) lol (0.637177) liking (0.633559) deals (0.623781) forgot (0.615864) touch (0.603341) 
+yellow (0.705068) grabbed (0.702095) class (0.672382) lines (0.654926) banana (0.653612) patrons (0.638139) low (0.629964) incredibly (0.629670) soy (0.629488) along (0.617379) 
+Error (train/valid/test) = 0.329862/1.222588/1.156260 (0.027556)
+..................................................
+energy after gradient step = 4629287.203060
+
+Top words for each topic:
+daily (0.980594) tenders (0.929008) liquor (0.738070) attached (0.723337) brownie (0.682333) lost (0.681708) cup (0.667944) waffles (0.648522) throughout (0.644340) seriously (0.639004) 
+tasting (0.864770) appreciate (0.793695) vietnamese (0.775565) hair (0.710012) spices (0.698936) serious (0.683596) juicy (0.672148) rate (0.668572) glasses (0.665362) ikea (0.660740) 
+layover (0.790287) terminal (0.774590) overpriced (0.755254) slightly (0.710687) credit (0.706134) english (0.668614) popcorn (0.617678) party (0.612657) lightly (0.610266) earlier (0.603283) 
+homemade (0.824241) lol (0.742160) granted (0.702306) 2nd (0.690126) specialty (0.679717) delish (0.660362) touch (0.641643) forgot (0.634425) given (0.590747) liking (0.587675) 
+lines (0.773442) class (0.758043) older (0.716953) grabbed (0.709106) low (0.682986) banana (0.679279) patrons (0.638212) hear (0.636820) yellow (0.615795) dipping (0.609672) 
+Error (train/valid/test) = 0.315450/1.237420/1.175506 (0.027857)
+..................................................
+energy after gradient step = 4628420.456576
+
+Top words for each topic:
+daily (1.001599) tenders (0.966082) liquor (0.818007) attached (0.810824) checking (0.716690) bagel (0.712505) recently (0.708333) fabulous (0.701910) spice (0.692728) cup (0.686912) 
+tasting (0.913201) spices (0.729462) ikea (0.714798) serious (0.684306) hair (0.679822) chef (0.666377) share (0.663705) juicy (0.663425) giving (0.660128) glasses (0.647095) 
+layover (0.910570) terminal (0.901162) slightly (0.882448) overpriced (0.813251) start (0.719697) earlier (0.715651) party (0.714638) set (0.661958) lightly (0.654813) english (0.647950) 
+homemade (1.018706) granted (0.769947) lol (0.750387) touch (0.738778) c (0.714728) 2nd (0.713396) somewhere (0.706671) help (0.688648) specialty (0.668695) buffet (0.658229) 
+grabbed (0.818951) class (0.787778) low (0.761777) above (0.760255) patrons (0.716069) yellow (0.713058) older (0.696925) yeah (0.680053) hear (0.670999) dipping (0.646836) 
+Error (train/valid/test) = 0.304819/1.289832/1.221716 (0.029623)
+..................................................
+energy after gradient step = 4627224.379706
+
+Top words for each topic:
+daily (1.039849) tenders (1.031040) liquor (0.810943) starbucks (0.792472) checking (0.789485) seriously (0.788078) passed (0.766459) recently (0.760604) attached (0.749338) lost (0.735356) 
+tasting (0.933621) ikea (0.853051) spices (0.810264) tiny (0.753437) sub (0.692429) thick (0.689348) brew (0.687686) chef (0.685051) giving (0.678148) downtown (0.673467) 
+terminal (0.945590) layover (0.916140) overpriced (0.793763) slightly (0.759617) miss (0.728538) credit (0.726452) start (0.696731) lightly (0.692411) party (0.676480) pet (0.662973) 
+homemade (0.970292) lol (0.952442) granted (0.883191) 2nd (0.874198) forgot (0.706034) past (0.689544) touch (0.683900) buffet (0.679750) melted (0.669072) c (0.665962) 
+class (0.851437) grabbed (0.845739) patrons (0.738398) salon (0.729610) mind (0.725874) excited (0.720731) above (0.714663) yellow (0.688999) low (0.675918) along (0.666503) 
+Error (train/valid/test) = 0.296186/1.318146/1.253134 (0.030654)
+..................................................
+energy after gradient step = 4626340.234434
+
+Top words for each topic:
+tenders (0.988605) daily (0.946891) checking (0.819115) liquor (0.817663) attached (0.802826) recently (0.799274) seriously (0.763500) sum (0.733412) passed (0.730951) lost (0.717074) 
+tasting (0.883504) spices (0.864689) ikea (0.815133) chef (0.791883) giving (0.757546) tiny (0.738726) brew (0.737603) glasses (0.732297) juicy (0.711664) likes (0.697531) 
+layover (0.927070) terminal (0.899663) miss (0.805193) credit (0.760868) overpriced (0.716456) delivered (0.702344) lightly (0.693316) spinach (0.687206) party (0.684376) start (0.682662) 
+lol (0.976397) homemade (0.914282) 2nd (0.874868) granted (0.874721) issues (0.721254) forgot (0.719748) melted (0.716710) help (0.684630) touch (0.672175) past (0.658162) 
+class (0.805427) grabbed (0.785372) along (0.767054) mind (0.757220) patrons (0.755821) dipping (0.744815) salon (0.744700) yellow (0.738080) low (0.700890) doesn (0.695768) 
+Error (train/valid/test) = 0.290934/1.346359/1.279275 (0.031950)
+..................................................
+energy after gradient step = 4625642.656553
+
+Top words for each topic:
+tenders (0.940557) daily (0.934447) checking (0.870449) crunchy (0.836357) n (0.816318) passed (0.814768) liquor (0.812364) typically (0.779291) brownie (0.766030) thursday (0.754205) 
+glasses (0.853714) tiny (0.852164) tasting (0.844640) ikea (0.824788) brewery (0.819142) efficient (0.805983) giving (0.803024) country (0.767223) spices (0.765819) comfy (0.743966) 
+terminal (0.980336) layover (0.943808) credit (0.939327) overpriced (0.891987) miss (0.859844) slightly (0.825840) pizzas (0.745555) gotten (0.730576) california (0.721892) spinach (0.716432) 
+homemade (1.033636) lol (0.939300) help (0.902310) granted (0.851900) forgot (0.808582) 2nd (0.791844) beyond (0.786953) chinese (0.725622) kill (0.709074) specialty (0.706151) 
+chipotle (0.893848) grabbed (0.888565) excited (0.879985) class (0.820040) above (0.808533) yellow (0.803168) patrons (0.774171) chose (0.746309) along (0.741811) dipping (0.706781) 
+Error (train/valid/test) = 0.284731/1.391599/1.322698 (0.034200)
+..................................................
+energy after gradient step = 4624665.238816
+
+Top words for each topic:
+checking (1.005243) tenders (1.000428) n (0.932835) daily (0.881616) tuesday (0.874730) thursday (0.817108) liquor (0.814502) recently (0.810037) crunchy (0.788204) passed (0.786212) 
+tiny (0.888638) brewery (0.842708) ikea (0.807408) thick (0.804653) fair (0.798867) country (0.792657) glasses (0.791279) serious (0.780287) tasting (0.771420) comfy (0.769397) 
+terminal (1.100486) credit (1.010886) overpriced (0.985077) slightly (0.949342) miss (0.942977) layover (0.941544) value (0.836517) party (0.824243) pizzas (0.795483) gotten (0.774618) 
+lol (0.994099) homemade (0.977490) forgot (0.899236) granted (0.863638) 2nd (0.843005) beyond (0.814674) help (0.814028) chinese (0.752652) possibly (0.715001) kill (0.710985) 
+excited (0.921328) grabbed (0.836970) chipotle (0.822946) yellow (0.809571) class (0.801264) older (0.761359) entrees (0.754050) patrons (0.749097) chose (0.740577) mind (0.737354) 
+Error (train/valid/test) = 0.280990/1.418248/1.350801 (0.036043)
+..................................................
+energy after gradient step = 4624170.955608
+
+Top words for each topic:
+tuesday (1.013085) n (0.992666) tenders (0.962988) checking (0.901215) daily (0.886375) passed (0.875014) thursday (0.855060) liquor (0.842211) attached (0.814067) recently (0.804228) 
+tiny (0.881424) fair (0.863676) app (0.832674) ikea (0.813927) comfy (0.806558) brewery (0.799229) tasting (0.796802) country (0.796132) likes (0.789234) spices (0.781420) 
+terminal (1.063208) overpriced (1.033478) credit (0.982745) miss (0.961569) slightly (0.935398) layover (0.926291) value (0.867665) cajun (0.815529) party (0.805551) gotten (0.805363) 
+lol (1.057430) homemade (1.054755) forgot (0.852937) 2nd (0.832198) granted (0.819087) chinese (0.809996) past (0.794844) help (0.754871) self (0.725198) moving (0.709030) 
+chipotle (0.829838) older (0.823138) yellow (0.819977) class (0.815918) grabbed (0.806321) rocking (0.785009) excited (0.774427) news (0.770410) slices (0.741675) festival (0.738591) 
+Error (train/valid/test) = 0.277997/1.440898/1.379174 (0.037710)
+..................................................
+energy after gradient step = 4623696.727407
+
+Top words for each topic:
+tenders (1.032629) checking (0.991270) tuesday (0.923542) n (0.920096) daily (0.899425) passed (0.873229) mac (0.864611) thursday (0.840098) recently (0.831577) liquor (0.795844) 
+ikea (0.976540) tiny (0.912023) fair (0.868723) serious (0.842020) likes (0.839323) app (0.832297) giving (0.825926) run (0.821223) tasting (0.809326) spices (0.778849) 
+layover (1.043232) terminal (1.006691) overpriced (0.970266) credit (0.951332) slightly (0.877151) miss (0.858852) juice (0.815729) butter (0.808159) california (0.805570) word (0.797708) 
+homemade (1.109281) lol (0.987449) past (0.924840) forgot (0.887575) chinese (0.842615) granted (0.840769) option (0.829615) located (0.794310) charge (0.775778) c (0.774294) 
+chipotle (0.905053) yellow (0.863849) above (0.809107) chose (0.800042) excited (0.799378) bottom (0.796763) festival (0.777459) shop (0.767579) grabbed (0.767469) entrees (0.748757) 
+Error (train/valid/test) = 0.275411/1.470566/1.405185 (0.039603)
+..................................................
+energy after gradient step = 4623127.488829
+
+Top words for each topic:
+tenders (1.090796) n (0.984340) checking (0.930314) daily (0.923061) tuesday (0.890313) passed (0.880136) cup (0.838956) mac (0.834376) building (0.828205) thursday (0.823001) 
+ikea (0.969702) tiny (0.951088) giving (0.886796) fair (0.863355) 7 (0.852645) app (0.844919) serious (0.834050) likes (0.828294) run (0.826713) tasting (0.810958) 
+layover (1.117628) terminal (1.031958) credit (0.966683) slightly (0.918078) juice (0.861675) overpriced (0.860030) days (0.817067) butter (0.787848) miss (0.782176) cannot (0.779313) 
+homemade (1.055372) lol (0.970261) forgot (0.968355) located (0.938771) granted (0.877074) charge (0.874805) option (0.867629) past (0.852447) chinese (0.817435) fact (0.778473) 
+chipotle (0.851202) bottom (0.826854) older (0.821128) dipping (0.814227) shop (0.803390) 15 (0.802307) yellow (0.782577) tavern (0.763436) class (0.759246) news (0.756958) 
+Error (train/valid/test) = 0.273144/1.488895/1.427690 (0.041252)
+..................................................
+energy after gradient step = 4622765.846185
+
+Top words for each topic:
+tenders (1.086698) n (1.037765) checking (0.954980) passed (0.949823) thursday (0.945009) daily (0.935296) tuesday (0.906876) cup (0.899616) him (0.894392) mac (0.813180) 
+ikea (1.009338) tiny (0.990489) likes (0.878892) run (0.871665) fair (0.869281) 7 (0.836297) appointment (0.813960) brewery (0.809025) comfy (0.794092) tasting (0.790733) 
+layover (1.131330) terminal (1.057529) credit (0.969901) slightly (0.902050) seem (0.888841) juice (0.887283) butter (0.842265) earlier (0.840475) overpriced (0.796953) gets (0.795868) 
+homemade (1.031452) forgot (0.997776) located (0.962092) past (0.941884) chinese (0.919616) lol (0.914735) mall (0.885127) granted (0.876838) option (0.872033) kill (0.822309) 
+dipping (0.929913) chipotle (0.902246) older (0.884648) yellow (0.882806) 15 (0.843067) shop (0.826578) tavern (0.786547) tots (0.771906) rocking (0.761607) bottom (0.760268) 
+Error (train/valid/test) = 0.271045/1.507703/1.448224 (0.043096)
+..................................................
+energy after gradient step = 4622060.372947
+
+Top words for each topic:
+n (1.184583) thursday (1.047542) tenders (1.031644) cup (0.993236) tuesday (0.926024) checking (0.921846) ramen (0.905557) desk (0.886112) mac (0.884752) passed (0.865393) 
+ikea (1.062055) tasting (0.978106) tiny (0.960545) likes (0.943709) appointment (0.889462) 7 (0.883519) giving (0.826129) fair (0.812856) afraid (0.807846) run (0.804571) 
+terminal (1.101226) layover (1.096826) slightly (1.040367) seem (1.029484) air (0.942020) sports (0.938157) credit (0.901924) juice (0.886982) butter (0.865023) cajun (0.851928) 
+homemade (1.041999) located (0.972171) forgot (0.950933) beyond (0.901873) lol (0.898324) mall (0.879082) granted (0.853667) happened (0.844828) chinese (0.830221) touch (0.828150) 
+dipping (0.928506) shop (0.879566) bite (0.879491) older (0.877509) above (0.872109) chipotle (0.868923) excited (0.848798) highlight (0.840892) tots (0.837885) yellow (0.822237) 
+Error (train/valid/test) = 0.269023/1.532240/1.479687 (0.045401)
+..................................................
+energy after gradient step = 4621387.497577
+
+Top words for each topic:
+n (1.213261) tenders (1.106614) checking (1.011169) thursday (0.992672) cup (0.948810) ramen (0.936550) mac (0.912437) him (0.901848) tuesday (0.893370) passed (0.872409) 
+ikea (1.098979) tiny (1.003026) tasting (0.976779) likes (0.937943) saw (0.886226) 7 (0.877399) run (0.847324) brewery (0.844838) appointment (0.836011) juicy (0.835356) 
+layover (1.166442) terminal (1.071438) seem (1.053969) slightly (0.947276) airport (0.905859) air (0.899719) juice (0.880429) cajun (0.874473) sports (0.868940) set (0.865440) 
+homemade (1.088908) forgot (0.948022) lol (0.909155) customer (0.863915) idea (0.861268) beyond (0.860557) mall (0.852076) somewhere (0.849494) dine (0.847625) granted (0.842780) 
+dipping (0.954305) older (0.952931) above (0.906054) bite (0.885709) excited (0.873188) 15 (0.872325) class (0.869465) shop (0.860255) highlight (0.847522) crab (0.841242) 
+Error (train/valid/test) = 0.267272/1.550813/1.494891 (0.046982)
+..................................................
+energy after gradient step = 4620816.366438
+
+Top words for each topic:
+n (1.337714) tenders (1.105821) him (0.977207) thursday (0.975563) tuesday (0.970006) checking (0.957480) ramen (0.939332) mac (0.934625) passed (0.909247) crunchy (0.872422) 
+ikea (1.079855) tiny (1.031629) giving (0.933423) brewery (0.891401) likes (0.884839) 7 (0.858964) appointment (0.858144) run (0.846346) tasting (0.842499) spices (0.827920) 
+layover (1.209854) terminal (1.067825) airport (0.989285) juice (0.979358) seem (0.970408) slightly (0.953783) under (0.915166) overpriced (0.888900) sports (0.880477) air (0.870839) 
+homemade (1.097363) forgot (0.958078) idea (0.942461) mall (0.910592) located (0.908018) specialty (0.894956) touch (0.884524) past (0.868675) sign (0.853179) chairs (0.843985) 
+dipping (0.987621) excited (0.968691) bite (0.914339) older (0.911501) 15 (0.904823) above (0.886321) crab (0.880025) shop (0.877241) tavern (0.862135) chipotle (0.861151) 
+Error (train/valid/test) = 0.265881/1.572536/1.519512 (0.048744)
+..................................................
+energy after gradient step = 4620185.869377
+
+Top words for each topic:
+n (1.218037) tenders (1.109931) tuesday (1.047621) mac (0.974244) him (0.972592) checking (0.970054) ramen (0.947276) passed (0.931575) crunchy (0.896486) thursday (0.876883) 
+ikea (1.150240) tiny (0.995015) likes (0.933044) appointment (0.899861) 7 (0.890873) brewery (0.887941) spices (0.861913) tasting (0.837802) afraid (0.796261) fair (0.792725) 
+layover (1.108228) airport (1.093982) terminal (1.092034) seem (1.056260) sports (0.987349) overpriced (0.985976) juice (0.947139) air (0.937998) midwood (0.916181) under (0.905311) 
+homemade (1.097448) mall (0.980292) idea (0.953321) duck (0.918085) forgot (0.909176) specialty (0.895315) past (0.886315) granted (0.871333) sign (0.870510) shopping (0.821827) 
+dipping (1.075806) excited (1.003642) die (0.937116) bottom (0.932470) chipotle (0.930261) above (0.912430) pickles (0.905796) bite (0.880409) 15 (0.863976) crispy (0.850504) 
+Error (train/valid/test) = 0.264460/1.593047/1.537703 (0.050446)
+..................................................
+energy after gradient step = 4619716.892214
+
+Top words for each topic:
+n (1.126185) tenders (1.124201) him (1.056551) ramen (1.016798) tuesday (1.002334) mac (0.941218) thursday (0.918501) passed (0.899245) fabulous (0.890277) cup (0.886803) 
+ikea (1.200873) likes (1.037034) tiny (0.956505) 7 (0.950007) appointment (0.902678) spices (0.888309) standard (0.885444) bean (0.871662) tasting (0.861465) brewery (0.853146) 
+airport (1.165491) layover (1.122349) terminal (1.063331) seem (1.054528) air (0.991183) overpriced (0.988893) party (0.944512) butter (0.941682) juice (0.934830) lightly (0.923932) 
+mall (1.106441) homemade (1.075813) idea (1.008877) past (0.968866) duck (0.929161) forgot (0.926268) chairs (0.906472) dine (0.871125) lol (0.859892) specialty (0.859531) 
+dipping (1.024440) excited (0.981910) chipotle (0.981180) above (0.928207) pickles (0.907363) dressing (0.904951) die (0.890627) older (0.878653) bottom (0.877187) 15 (0.848403) 
+Error (train/valid/test) = 0.263421/1.613760/1.561399 (0.052528)
+..................................................
+energy after gradient step = 4619220.883649
+
+Top words for each topic:
+n (1.202115) tenders (1.135852) him (1.078544) tuesday (0.993731) fabulous (0.967128) passed (0.941715) expectations (0.940700) ramen (0.903183) mac (0.896453) barely (0.893131) 
+ikea (1.241727) tiny (1.121386) likes (1.081208) spices (0.943965) 7 (0.938514) standard (0.917857) picked (0.906377) bean (0.869491) giving (0.864202) appointment (0.858236) 
+airport (1.179761) layover (1.143368) terminal (1.094712) seem (1.074133) party (1.047837) sports (1.005647) air (1.004190) butter (0.991560) juice (0.973652) cajun (0.910442) 
+homemade (1.139803) mall (1.046603) idea (1.019875) duck (0.973360) sort (0.957696) chairs (0.932501) forgot (0.922530) dine (0.920625) airports (0.918508) prior (0.887269) 
+chipotle (1.019754) dipping (1.011629) dressing (0.938909) older (0.932463) excited (0.925297) crispy (0.916360) die (0.912291) pickles (0.897326) above (0.889011) highlight (0.878924) 
+Error (train/valid/test) = 0.262025/1.633619/1.580186 (0.054275)
+..................................................
+energy after gradient step = 4618647.659391
+
+Top words for each topic:
+n (1.267937) tenders (1.165490) him (1.051223) tuesday (1.046123) passed (0.982175) expectations (0.959118) cup (0.947158) egg (0.941768) ramen (0.924992) extra (0.915113) 
+ikea (1.264273) tiny (1.095736) likes (1.054293) spices (1.001989) efficient (0.998436) standard (0.943483) bean (0.923515) picked (0.894018) giving (0.874657) 7 (0.873988) 
+airport (1.262170) terminal (1.151784) layover (1.078358) seem (1.066914) butter (1.055094) party (1.022568) sports (0.965808) earlier (0.961219) air (0.957575) juice (0.944469) 
+homemade (1.231165) mall (1.073130) idea (1.055207) duck (1.051112) chairs (1.010976) sort (0.984182) c (0.962885) prior (0.959799) past (0.933239) indian (0.912804) 
+chipotle (1.037045) pickles (0.968165) truly (0.942889) above (0.928432) dipping (0.924638) die (0.923874) festival (0.911881) excited (0.909213) honey (0.894972) dressing (0.890238) 
+Error (train/valid/test) = 0.260990/1.650687/1.599715 (0.056081)
+..................................................
+energy after gradient step = 4618113.625861
+
+Top words for each topic:
+n (1.272841) tenders (1.112807) ramen (1.077117) tuesday (1.071992) him (1.050132) building (0.969742) expectations (0.966125) extra (0.944341) lettuce (0.937554) factory (0.928027) 
+ikea (1.318790) tiny (1.172701) likes (1.155845) spices (0.995950) efficient (0.945039) standard (0.928396) giving (0.910102) saw (0.910100) appointment (0.893861) juicy (0.865581) 
+airport (1.313541) layover (1.181166) terminal (1.156704) party (1.110779) seem (1.019470) butter (1.006670) cajun (0.993477) juice (0.981837) sports (0.974291) cannot (0.963503) 
+homemade (1.248065) duck (1.092632) mall (1.049049) chairs (1.016988) idea (0.994115) past (0.988610) prior (0.954084) believe (0.932419) c (0.929579) airports (0.922472) 
+dipping (1.022322) above (1.016771) chipotle (1.011769) plates (0.971530) pickles (0.945117) festival (0.938615) yellow (0.935493) older (0.930891) dressing (0.923309) honey (0.913788) 
+Error (train/valid/test) = 0.258221/1.670258/1.621026 (0.058259)
+..................................................
+energy after gradient step = 4617285.064284
+
+Top words for each topic:
+tenders (1.184320) n (1.154414) ramen (1.095378) him (1.070626) lettuce (1.064726) tuesday (1.037190) extra (1.014077) cup (1.007456) upon (0.990990) factory (0.967790) 
+ikea (1.354906) likes (1.137690) tiny (1.078038) spices (1.007879) tortilla (0.939155) saw (0.934397) standard (0.927510) run (0.903102) tvs (0.887434) appointment (0.873500) 
+airport (1.277398) layover (1.254206) terminal (1.221215) party (1.153168) cajun (1.030959) butter (1.019637) rocking (1.001486) under (0.997995) cannot (0.997537) dining (0.976597) 
+homemade (1.357560) mall (1.097225) duck (1.074071) c (1.049643) chairs (1.006145) correct (0.997886) believe (0.990711) idea (0.987552) door (0.972911) airports (0.959547) 
+honey (1.096705) above (1.089484) chipotle (1.006442) dressing (0.985300) plates (0.963505) velvet (0.937171) dipping (0.928488) festival (0.927375) tots (0.916024) yellow (0.915902) 
+Error (train/valid/test) = 0.250273/1.687150/1.639654 (0.059705)
+..................................................
+energy after gradient step = 4615907.763867
+
+Top words for each topic:
+tenders (1.210623) n (1.154130) ramen (1.120831) him (1.108148) lettuce (1.081316) cup (1.070351) upon (1.027628) tuesday (1.020981) thursday (1.012158) expectations (0.984551) 
+ikea (1.411098) tiny (1.160793) likes (1.129223) standard (1.074396) spices (1.057874) saw (0.967503) tortilla (0.924342) fancy (0.912921) truck (0.894761) efficient (0.894153) 
+airport (1.329310) terminal (1.200054) layover (1.137763) party (1.102339) rocking (1.092830) cajun (1.075923) dining (1.011775) seem (1.000016) butter (0.988866) under (0.957347) 
+homemade (1.296291) mall (1.144214) duck (1.129452) airports (1.082332) chairs (1.078542) believe (1.074521) customer (1.059391) c (0.997410) idea (0.946229) correct (0.945540) 
+honey (1.090611) above (1.075677) chipotle (1.036445) dressing (1.016237) velvet (1.008642) plates (0.958752) truly (0.945088) dipping (0.943530) tavern (0.935566) class (0.928109) 
+Error (train/valid/test) = 0.241673/1.709138/1.661957 (0.060723)
+..................................................
+energy after gradient step = 4614999.082097
+
+Top words for each topic:
+n (1.293705) tenders (1.178552) cup (1.115187) ramen (1.104212) thursday (1.066407) him (1.043760) remember (1.038899) extra (1.014773) lettuce (0.982538) brisket (0.969452) 
+ikea (1.403699) likes (1.181306) spices (1.058490) saw (1.053362) tiny (1.031517) standard (0.978490) tortilla (0.974581) fancy (0.935991) efficient (0.927097) ballantyne (0.918733) 
+airport (1.367982) layover (1.211529) terminal (1.199827) rocking (1.196509) cajun (1.173964) tacos (1.074622) seem (1.073710) party (1.013352) under (0.984415) butter (0.974825) 
+homemade (1.380179) duck (1.237757) customer (1.129852) past (1.076492) airports (1.076056) mall (1.069815) chairs (1.049768) idea (0.996230) c (0.994079) saying (0.949692) 
+chipotle (1.234433) honey (1.177462) above (1.103415) tavern (1.015259) basil (0.997808) truly (0.984066) dressing (0.971039) dipping (0.942368) festival (0.935889) moment (0.923965) 
+Error (train/valid/test) = 0.235832/1.730517/1.682154 (0.062532)
+..................................................
+energy after gradient step = 4613912.018716
+
+Top words for each topic:
+n (1.248807) tenders (1.242249) cup (1.189812) ramen (1.091457) thursday (1.062103) him (1.059471) factory (1.016766) lamb (1.011323) brisket (0.999212) remember (0.981106) 
+ikea (1.431807) likes (1.184339) saw (1.157227) spices (1.092452) tiny (1.077569) star (0.970101) standard (0.951942) fancy (0.934329) ballantyne (0.926189) efficient (0.921041) 
+airport (1.393427) terminal (1.298296) rocking (1.190967) cajun (1.166958) layover (1.165027) tacos (1.094567) seem (1.039016) overpriced (1.030735) butter (1.029664) under (0.994001) 
+homemade (1.323968) past (1.202470) duck (1.186368) chairs (1.149336) airports (1.142015) mall (1.103993) airport (1.064241) customer (1.053842) correct (0.935531) shopping (0.920256) 
+honey (1.218101) chipotle (1.217005) basil (1.104155) dressing (1.069708) above (1.037452) truly (1.027849) tavern (0.995584) dipping (0.957491) brunch (0.929195) news (0.919884) 
+Error (train/valid/test) = 0.231898/1.750883/1.700642 (0.063287)
+..................................................
+energy after gradient step = 4613372.978567
+
+Top words for each topic:
+tenders (1.277133) n (1.262975) cup (1.234969) ramen (1.152927) thursday (1.103032) him (1.067040) factory (1.054363) brisket (1.029252) lamb (1.016190) remember (1.010112) 
+ikea (1.489966) likes (1.164102) tiny (1.093601) spices (1.090353) saw (1.067271) picked (1.035313) star (0.955795) mexican (0.950452) giving (0.932573) 9 (0.928314) 
+airport (1.446020) terminal (1.296461) layover (1.257259) cajun (1.212417) rocking (1.180464) tacos (1.052129) seem (1.046990) under (1.038745) air (1.020584) overpriced (0.994952) 
+homemade (1.356267) airports (1.220901) duck (1.185527) mall (1.163220) past (1.137784) customer (1.131350) airport (1.107366) chairs (1.089635) correct (0.957663) sports (0.932424) 
+chipotle (1.198196) honey (1.175184) truly (1.095867) basil (1.068782) dressing (1.043731) tavern (1.005960) pie (0.986798) dipping (0.976831) brunch (0.971546) plates (0.960042) 
+Error (train/valid/test) = 0.228842/1.759106/1.712442 (0.064073)
+..................................................
+energy after gradient step = 4612536.061870
+
+Top words for each topic:
+tenders (1.268893) cup (1.265259) n (1.180724) ramen (1.159402) factory (1.081286) thursday (1.078157) him (1.055856) lamb (1.033727) brisket (1.031637) upon (1.005609) 
+ikea (1.592484) likes (1.153336) spices (1.100860) tiny (1.073887) picked (1.050158) saw (1.046949) giving (1.028594) mexican (0.995979) star (0.968204) truck (0.946950) 
+airport (1.455885) terminal (1.337874) layover (1.270264) rocking (1.243985) seem (1.182841) cajun (1.138445) air (1.046322) under (1.042810) tacos (1.019977) stuffed (1.002424) 
+homemade (1.333855) duck (1.256473) airports (1.249226) mall (1.204317) airport (1.196314) past (1.128471) chairs (1.057486) customer (1.055251) correct (0.982306) sports (0.941465) 
+chipotle (1.244565) brunch (1.107754) basil (1.102022) honey (1.101219) truly (1.081244) dressing (1.058422) tavern (0.996039) group (0.973065) hear (0.951105) pie (0.937978) 
+Error (train/valid/test) = 0.226689/1.780435/1.731526 (0.064934)
+..................................................
+energy after gradient step = 4611697.836496
+
+Top words for each topic:
+ramen (1.283639) cup (1.232216) n (1.201379) tenders (1.166666) factory (1.094717) egg (1.070368) upon (1.025431) mac (1.023322) thursday (1.017426) tuesday (1.015894) 
+ikea (1.586495) spices (1.108569) likes (1.106288) saw (1.099387) tiny (1.059791) giving (1.037200) picked (1.028492) tasting (0.988111) brewery (0.976138) 00 (0.974092) 
+airport (1.475742) terminal (1.284120) layover (1.278095) rocking (1.262895) seem (1.183140) stuffed (1.154509) cajun (1.125911) air (1.114350) under (1.004220) crepe (0.983941) 
+homemade (1.305043) mall (1.286579) airports (1.279126) airport (1.263261) past (1.244700) duck (1.201702) customer (1.169834) chairs (1.044575) correct (0.987255) sort (0.956471) 
+chipotle (1.243303) basil (1.105021) dressing (1.099854) brunch (1.094023) group (1.039177) honey (1.010374) truly (0.999872) enjoyable (0.967499) tavern (0.963256) butter (0.934210) 
+Error (train/valid/test) = 0.224491/1.792960/1.741860 (0.065507)
+..................................................
+energy after gradient step = 4610822.098228
+
+Top words for each topic:
+n (1.345265) ramen (1.302661) tenders (1.225494) factory (1.142606) egg (1.131273) thursday (1.114859) cup (1.067223) mac (1.060686) phone (1.044394) upon (1.044345) 
+ikea (1.539565) likes (1.193691) tiny (1.184816) saw (1.106178) spices (1.044884) giving (1.043157) star (1.042787) tasting (1.031446) picked (1.009973) efficient (1.003051) 
+airport (1.585449) terminal (1.404491) rocking (1.325561) layover (1.312078) seem (1.208590) stuffed (1.167994) cajun (1.124763) delivery (1.113610) air (1.108699) crepe (1.101649) 
+airports (1.346216) airport (1.310631) homemade (1.305661) mall (1.277413) duck (1.187645) past (1.178787) customer (1.172176) sort (1.078254) clt (1.034569) shopping (1.022460) 
+chipotle (1.376940) group (1.137270) basil (1.119552) dressing (1.111348) brunch (1.100740) ride (1.035100) enjoyable (1.023504) honey (1.019899) truly (0.987314) butter (0.959853) 
+Error (train/valid/test) = 0.222541/1.821691/1.765951 (0.066525)
+..................................................
+energy after gradient step = 4609896.258776
+
+Top words for each topic:
+n (1.314117) ramen (1.302109) tenders (1.238189) egg (1.129607) thursday (1.128987) factory (1.122368) cup (1.121506) mac (1.097845) lamb (1.032747) him (1.015853) 
+ikea (1.625038) likes (1.191016) tiny (1.160102) saw (1.073177) tasting (1.063155) giving (1.044471) star (1.030918) spices (1.015294) picked (1.014933) thin (0.992634) 
+airport (1.611254) terminal (1.390036) rocking (1.359386) layover (1.309683) seem (1.226501) cajun (1.223462) stuffed (1.161672) air (1.145907) crepe (1.127420) delivery (1.126322) 
+airport (1.351694) airports (1.349638) homemade (1.247915) mall (1.239406) customer (1.227034) duck (1.188872) past (1.163244) shopping (1.069009) clt (1.057342) quickly (1.044189) 
+chipotle (1.353548) dressing (1.187140) basil (1.180306) group (1.153356) truly (1.065064) honey (1.043702) brunch (1.034799) enjoyable (1.010313) excited (1.005657) ride (0.981462) 
+Error (train/valid/test) = 0.220146/1.826798/1.769466 (0.066653)
+..................................................
+energy after gradient step = 4609017.936834
+
+Top words for each topic:
+ramen (1.450178) n (1.380630) egg (1.213374) tenders (1.194624) factory (1.079163) mac (1.075276) cup (1.075168) lamb (1.056126) phone (1.015987) thursday (0.979096) 
+ikea (1.653423) likes (1.203625) tiny (1.163850) beers (1.162761) nights (1.100833) giving (1.079221) ballantyne (1.070015) tasting (1.065993) spices (1.041486) saw (1.035665) 
+airport (1.645604) terminal (1.505145) layover (1.436505) rocking (1.389337) seem (1.278294) miss (1.184796) air (1.175675) delivery (1.154263) cajun (1.153244) nearly (1.099347) 
+airport (1.448372) airports (1.385832) mall (1.343076) customer (1.304606) homemade (1.295946) duck (1.269528) past (1.098142) shopping (1.093666) clt (1.054338) self (1.025940) 
+chipotle (1.354171) dressing (1.181736) basil (1.160932) group (1.136686) ride (1.111956) brunch (1.072492) dipping (1.037787) honey (1.028384) enjoyable (1.015327) truly (0.981795) 
+Error (train/valid/test) = 0.219275/1.848595/1.790316 (0.067738)
+..................................................
+energy after gradient step = 4607872.612835
+
+Top words for each topic:
+ramen (1.405163) n (1.363208) egg (1.249626) tenders (1.241336) factory (1.124852) lamb (1.087492) mac (1.082909) cup (1.077856) care (1.043489) thursday (0.996820) 
+ikea (1.631698) likes (1.225133) tiny (1.184321) beers (1.180588) saw (1.144499) tasting (1.139859) ballantyne (1.124698) nights (1.114135) play (1.041419) spices (1.025499) 
+airport (1.681710) terminal (1.507839) layover (1.479750) rocking (1.415052) seem (1.302782) miss (1.263463) cajun (1.189743) delivery (1.157537) crepe (1.155622) air (1.145008) 
+airport (1.443022) airports (1.402188) mall (1.396920) customer (1.375302) duck (1.319882) homemade (1.306882) past (1.128070) thai (1.127528) shopping (1.102563) flights (1.098627) 
+chipotle (1.386873) basil (1.184566) dressing (1.180382) group (1.177735) ride (1.165092) honey (1.099937) brunch (1.094414) enjoyable (1.052292) tavern (1.037769) dipping (1.013288) 
+Error (train/valid/test) = 0.217652/1.852701/1.794565 (0.068093)
+..................................................
+energy after gradient step = 4606886.416440
+
+Top words for each topic:
+ramen (1.434627) n (1.382176) tenders (1.261851) egg (1.185502) mac (1.130019) factory (1.127369) cup (1.124702) lamb (1.100678) taco (1.100214) care (1.028913) 
+ikea (1.620615) nights (1.175172) beers (1.174672) ballantyne (1.171703) likes (1.153133) tasting (1.093648) spices (1.088971) saw (1.081701) picked (1.077450) tiny (1.066628) 
+airport (1.787493) terminal (1.575463) rocking (1.504591) layover (1.462282) seem (1.269519) delivery (1.239964) cajun (1.227543) crepe (1.203024) miss (1.182191) air (1.163383) 
+airports (1.470296) mall (1.458674) airport (1.455956) customer (1.401839) homemade (1.288210) shopping (1.247893) duck (1.238944) past (1.215837) thai (1.196052) flight (1.140231) 
+chipotle (1.324805) ride (1.265597) basil (1.241321) dressing (1.228067) honey (1.079222) slices (1.077697) group (1.061924) brunch (1.061908) dipping (1.047971) banana (1.026773) 
+Error (train/valid/test) = 0.217558/1.869903/1.809764 (0.069216)
+..................................................
+energy after gradient step = 4605800.717206
+
+Top words for each topic:
+ramen (1.469151) n (1.414901) egg (1.250040) tenders (1.233964) mac (1.182196) cup (1.180150) taco (1.139145) thursday (1.125857) barely (1.070743) lamb (1.062191) 
+ikea (1.641073) ballantyne (1.289015) nights (1.227090) beers (1.216168) likes (1.127255) spices (1.112298) picked (1.063423) giving (1.056186) fantastic (1.053770) tiny (1.043406) 
+airport (1.801910) terminal (1.560319) layover (1.519427) rocking (1.454301) miss (1.370104) cajun (1.277556) delivery (1.271441) seem (1.229404) crepe (1.209195) air (1.209157) 
+mall (1.560104) airports (1.477124) airport (1.471582) customer (1.428842) flight (1.327110) shopping (1.298478) homemade (1.261932) car (1.200896) past (1.200038) duck (1.193931) 
+chipotle (1.322859) dressing (1.308317) ride (1.213529) basil (1.170621) group (1.160715) honey (1.127513) pie (1.127005) brunch (1.126566) entree (1.055452) tavern (1.035620) 
+Error (train/valid/test) = 0.216119/1.878915/1.822619 (0.068527)
+..................................................
+energy after gradient step = 4604310.324777
+
+Top words for each topic:
+ramen (1.484722) n (1.361766) tenders (1.259462) egg (1.190795) mac (1.153831) lamb (1.114127) seasoned (1.082179) cup (1.079841) taco (1.078075) likely (1.074807) 
+ikea (1.687628) beers (1.269869) ballantyne (1.268982) nights (1.243098) likes (1.176363) fantastic (1.095588) immediately (1.083106) spices (1.081989) mexican (1.064189) truck (1.058477) 
+airport (1.866288) terminal (1.576528) layover (1.528115) rocking (1.521042) crepe (1.313523) delivery (1.308308) cajun (1.301990) miss (1.277248) seem (1.259711) air (1.251724) 
+airport (1.528609) mall (1.481189) airports (1.462160) flight (1.433141) customer (1.394089) shopping (1.362847) duck (1.266300) past (1.263094) homemade (1.239200) car (1.175759) 
+chipotle (1.323811) dressing (1.309103) ride (1.220284) basil (1.195595) brunch (1.155187) pie (1.132055) group (1.131911) slices (1.108513) excited (1.093616) honey (1.082057) 
+Error (train/valid/test) = 0.215611/1.883700/1.827090 (0.069196)
+..................................................
+energy after gradient step = 4602803.511901
+
+Top words for each topic:
+ramen (1.558039) n (1.296983) tenders (1.266016) egg (1.261704) likely (1.125806) mac (1.121850) taco (1.118707) heard (1.099606) cup (1.095300) seasoned (1.083011) 
+ikea (1.646562) nights (1.294417) ballantyne (1.291330) beers (1.245767) likes (1.170557) wing (1.127461) typical (1.111827) frozen (1.097356) mexican (1.093075) fantastic (1.080148) 
+airport (1.913888) terminal (1.675628) layover (1.562511) rocking (1.516375) cajun (1.377786) miss (1.330138) crepe (1.305405) biscuit (1.295212) air (1.267449) nearly (1.225400) 
+mall (1.617266) airport (1.520364) airports (1.501756) flight (1.469160) shopping (1.430876) customer (1.367534) car (1.324848) homemade (1.260920) duck (1.246888) cars (1.152165) 
+dressing (1.360681) chipotle (1.275980) ride (1.260135) basil (1.244114) group (1.134470) brunch (1.115846) honey (1.104001) slices (1.095951) entree (1.066626) stadium (1.057229) 
+Error (train/valid/test) = 0.215480/1.896391/1.833265 (0.068264)
+..................................................
+energy after gradient step = 4601217.977045
+
+Top words for each topic:
+ramen (1.622641) n (1.296509) egg (1.252455) tenders (1.237129) seasoned (1.144184) taco (1.134226) factory (1.116164) country (1.109535) cup (1.086292) building (1.071977) 
+ikea (1.682285) nights (1.393963) ballantyne (1.316926) beers (1.251114) likes (1.203724) mexican (1.146651) frozen (1.142296) salsa (1.123320) star (1.097605) club (1.093211) 
+airport (1.983557) terminal (1.665648) layover (1.623152) rocking (1.512706) crepe (1.384200) miss (1.328753) cajun (1.324679) biscuit (1.318464) air (1.266968) nearly (1.235202) 
+mall (1.677855) airport (1.586766) airports (1.548312) flight (1.474527) shopping (1.468129) car (1.358496) customer (1.317159) homemade (1.287520) duck (1.266982) flights (1.216584) 
+dressing (1.352291) chipotle (1.251977) group (1.225967) ride (1.224261) basil (1.186799) brunch (1.165740) honey (1.111218) entree (1.104527) stadium (1.095182) cake (1.075520) 
+Error (train/valid/test) = 0.214382/1.895473/1.840459 (0.068655)
+..................................................
+energy after gradient step = 4599371.385579
+
+Top words for each topic:
+ramen (1.632764) n (1.319796) egg (1.269141) tenders (1.254594) seasoned (1.218437) taco (1.200884) mac (1.200352) thursday (1.167756) factory (1.158521) heard (1.131168) 
+ikea (1.683679) ballantyne (1.300639) nights (1.289982) beers (1.277526) frozen (1.215562) salsa (1.192104) mexican (1.182621) typical (1.133352) truck (1.112810) likes (1.108830) 
+airport (2.011297) terminal (1.667727) layover (1.636764) rocking (1.636004) cajun (1.405699) crepe (1.375257) miss (1.355608) biscuit (1.354502) nearly (1.309715) air (1.253664) 
+mall (1.664493) airports (1.616405) airport (1.598135) flight (1.476851) shopping (1.452007) customer (1.408867) car (1.392782) homemade (1.287296) flights (1.244243) gate (1.210141) 
+dressing (1.391147) chipotle (1.335839) ride (1.263678) basil (1.176941) group (1.143796) stadium (1.137306) cupcakes (1.129862) started (1.104486) pie (1.098976) entree (1.081298) 
+Error (train/valid/test) = 0.214712/1.908406/1.847237 (0.068066)
+..................................................
+energy after gradient step = 4597863.817263
+
+Top words for each topic:
+ramen (1.666533) mac (1.295765) egg (1.284916) n (1.270553) seasoned (1.235608) tenders (1.203924) taco (1.195572) thursday (1.193625) factory (1.119065) likely (1.109961) 
+ikea (1.716813) ballantyne (1.354048) beers (1.336907) nights (1.269089) mexican (1.223832) frozen (1.217278) salsa (1.213320) tasting (1.206733) likes (1.185596) typical (1.152917) 
+airport (2.056274) terminal (1.710446) layover (1.681695) rocking (1.633534) cajun (1.391342) crepe (1.375932) miss (1.338921) biscuit (1.334428) nearly (1.294239) air (1.288552) 
+mall (1.651173) airport (1.648597) airports (1.648550) flight (1.583682) car (1.490423) shopping (1.482964) customer (1.435461) cars (1.281754) flights (1.263636) homemade (1.244292) 
+dressing (1.328327) ride (1.305459) chipotle (1.301610) basil (1.228203) cupcakes (1.175495) started (1.137699) stadium (1.134606) buffet (1.132081) cake (1.100803) pie (1.093505) 
+Error (train/valid/test) = 0.212878/1.910215/1.843147 (0.067513)
+..................................................
+energy after gradient step = 4596065.926511
+
+Top words for each topic:
+ramen (1.645508) mac (1.323154) egg (1.278189) n (1.269713) tenders (1.250337) taco (1.202598) thursday (1.176280) likely (1.175270) seasoned (1.172163) factory (1.117496) 
+ikea (1.772349) beers (1.392263) nights (1.297808) ballantyne (1.288867) mexican (1.252847) tiny (1.212134) frozen (1.199976) club (1.184788) mi (1.169633) salsa (1.165868) 
+airport (2.160431) terminal (1.783778) rocking (1.687827) layover (1.673157) cajun (1.476453) crepe (1.472252) biscuit (1.415955) miss (1.368547) delivery (1.336088) nearly (1.328357) 
+mall (1.773193) airports (1.636374) airport (1.619256) flight (1.602902) shopping (1.580263) customer (1.578622) car (1.502326) flights (1.315629) sports (1.301770) gate (1.277726) 
+ride (1.325454) dressing (1.309354) chipotle (1.280842) basil (1.226769) cake (1.197367) buffet (1.196194) started (1.178797) cupcakes (1.170669) stadium (1.139778) tots (1.108222) 
+Error (train/valid/test) = 0.213198/1.914592/1.843160 (0.067039)
+..................................................
+energy after gradient step = 4593892.963467
+
+Top words for each topic:
+ramen (1.719811) egg (1.379083) mac (1.369726) tenders (1.319912) n (1.284990) taco (1.266904) thursday (1.235472) seasoned (1.227957) likely (1.187260) building (1.172975) 
+ikea (1.842023) beers (1.373427) nights (1.364032) ballantyne (1.336758) mexican (1.270775) tasting (1.200366) tiny (1.139041) mi (1.129499) 00 (1.129199) club (1.125377) 
+airport (2.247290) terminal (1.751358) rocking (1.739531) layover (1.738295) cajun (1.483943) crepe (1.456826) biscuit (1.437610) air (1.361903) miss (1.332825) easy (1.319148) 
+flight (1.773032) mall (1.755495) airports (1.646382) airport (1.632278) car (1.613983) customer (1.612235) shopping (1.583232) flights (1.406185) cars (1.330093) thai (1.307597) 
+dressing (1.345980) ride (1.316950) buffet (1.245248) chipotle (1.234238) basil (1.219728) cake (1.177468) brunch (1.170954) tavern (1.157151) cupcakes (1.145852) entree (1.144909) 
+Error (train/valid/test) = 0.213714/1.909394/1.835388 (0.065406)
+..................................................
+energy after gradient step = 4590805.885704
+
+Top words for each topic:
+ramen (1.720051) tenders (1.368058) egg (1.323328) mac (1.304182) n (1.299673) taco (1.285469) likely (1.201539) seasoned (1.197162) tender (1.174785) building (1.138381) 
+ikea (1.874205) beers (1.390342) nights (1.346621) mexican (1.334719) ballantyne (1.331151) tiny (1.190861) tasting (1.186620) mi (1.140512) wing (1.133642) frozen (1.118411) 
+airport (2.299247) terminal (1.858914) rocking (1.792045) layover (1.754411) crepe (1.516965) biscuit (1.514317) cajun (1.514081) chairs (1.405361) nearly (1.399604) air (1.354481) 
+mall (1.882679) flight (1.875643) airports (1.688854) car (1.687203) airport (1.667290) shopping (1.628765) customer (1.597750) flights (1.467563) cars (1.335697) clt (1.311495) 
+buffet (1.358209) ride (1.356232) dressing (1.294717) chipotle (1.267456) cupcakes (1.241682) basil (1.239814) brunch (1.227058) cake (1.210340) gnocchi (1.188587) entree (1.187227) 
+Error (train/valid/test) = 0.213273/1.909151/1.838037 (0.065748)
+..................................................
+energy after gradient step = 4587995.954268
+
+Top words for each topic:
+ramen (1.748059) tenders (1.505794) mac (1.430106) taco (1.384641) n (1.359984) egg (1.292795) likely (1.290152) seasoned (1.236203) country (1.204989) building (1.175498) 
+ikea (1.912816) nights (1.377205) beers (1.368836) mexican (1.359774) ballantyne (1.323393) mi (1.269653) tasting (1.243507) frozen (1.188894) wing (1.177738) whatever (1.146525) 
+airport (2.379723) layover (1.860106) terminal (1.855687) rocking (1.855186) chairs (1.602836) cajun (1.589948) crepe (1.512376) biscuit (1.420967) air (1.390239) nearly (1.348964) 
+mall (1.901305) flight (1.869516) airport (1.776603) car (1.759794) airports (1.722673) shopping (1.627504) customer (1.601132) flights (1.496931) cars (1.452062) hertz (1.379384) 
+buffet (1.422438) basil (1.336413) ride (1.319759) dressing (1.284123) cupcakes (1.274006) brunch (1.260803) chipotle (1.203029) stadium (1.200459) entree (1.154017) cake (1.150839) 
+Error (train/valid/test) = 0.213854/1.907447/1.836796 (0.065647)
+..................................................
+energy after gradient step = 4584850.002261
+
+Top words for each topic:
+ramen (1.826624) tenders (1.530176) mac (1.501174) taco (1.444214) n (1.386013) egg (1.366016) likely (1.290429) seasoned (1.276916) upon (1.214931) brisket (1.201927) 
+ikea (1.929591) beers (1.470567) mexican (1.394299) ballantyne (1.354121) nights (1.273054) mi (1.259805) tasting (1.226882) wing (1.199921) club (1.194863) brewery (1.180740) 
+airport (2.405877) terminal (1.982919) layover (1.915058) rocking (1.876602) chairs (1.657989) cajun (1.556031) crepe (1.550831) biscuit (1.472521) air (1.400251) bathroom (1.348710) 
+flight (1.968183) mall (1.918712) airports (1.830488) airport (1.829320) car (1.778268) shopping (1.690891) customer (1.626771) flights (1.586355) cars (1.509894) gate (1.485369) 
+buffet (1.486507) ride (1.372573) brunch (1.334004) dressing (1.313175) cupcakes (1.312070) basil (1.306346) entree (1.201228) cake (1.199852) chipotle (1.185348) stadium (1.159816) 
+Error (train/valid/test) = 0.214276/1.907708/1.833321 (0.065198)
+..................................................
+energy after gradient step = 4581304.864300
+
+Top words for each topic:
+ramen (1.853576) mac (1.538381) tenders (1.533549) taco (1.378403) seasoned (1.353660) egg (1.329598) n (1.314309) tacos (1.281418) likely (1.265015) brisket (1.203806) 
+ikea (1.942734) beers (1.477400) ballantyne (1.388245) mexican (1.365658) mi (1.301086) tasting (1.273436) nights (1.245968) wing (1.219365) brewery (1.215624) friends (1.214964) 
+airport (2.441623) layover (1.966171) terminal (1.946815) rocking (1.923489) chairs (1.677062) cajun (1.663227) crepe (1.561861) biscuit (1.532230) air (1.468915) bathroom (1.376051) 
+mall (2.026279) flight (1.995244) airport (1.917989) airports (1.843733) car (1.819247) shopping (1.702447) customer (1.657023) flights (1.598652) gate (1.559691) cars (1.548070) 
+buffet (1.453828) ride (1.401595) brunch (1.376282) cupcakes (1.358725) basil (1.322286) dressing (1.306738) cake (1.290750) gnocchi (1.239683) potato (1.225804) stadium (1.224048) 
+Error (train/valid/test) = 0.214471/1.908772/1.828170 (0.064470)
+..................................................
+energy after gradient step = 4577194.127629
+
+Top words for each topic:
+ramen (1.887652) tenders (1.568879) mac (1.560447) n (1.406214) seasoned (1.403224) tacos (1.372116) egg (1.371626) taco (1.354393) likely (1.245950) brisket (1.214869) 
+ikea (1.993075) beers (1.516498) mexican (1.399552) ballantyne (1.379970) brewery (1.350038) mi (1.340761) tasting (1.324554) wing (1.280095) nights (1.257128) friends (1.204293) 
+airport (2.451921) layover (1.988907) rocking (1.975877) terminal (1.963539) crepe (1.709066) cajun (1.684615) chairs (1.670443) biscuit (1.603216) air (1.454430) bathroom (1.392648) 
+mall (2.104017) flight (2.033706) airport (1.996668) car (1.935618) airports (1.863451) shopping (1.738769) flights (1.658390) customer (1.635756) cars (1.620110) gate (1.608226) 
+buffet (1.515267) brunch (1.450219) cupcakes (1.424090) dressing (1.353597) cake (1.332823) basil (1.322887) ride (1.316443) gnocchi (1.255756) entree (1.234368) potato (1.233847) 
+Error (train/valid/test) = 0.215087/1.906975/1.828150 (0.064011)
+..................................................
+energy after gradient step = 4572523.622737
+
+Top words for each topic:
+ramen (1.914392) mac (1.539132) tenders (1.529532) taco (1.487150) tacos (1.457535) egg (1.442924) n (1.397634) seasoned (1.332840) bbq (1.251677) likely (1.250926) 
+ikea (1.998717) beers (1.569321) ballantyne (1.413809) brewery (1.360784) mexican (1.351355) nights (1.350564) mi (1.289946) wing (1.254863) grocery (1.247930) tasting (1.240728) 
+airport (2.477809) layover (2.109276) rocking (2.020825) terminal (1.989148) crepe (1.750392) chairs (1.724821) biscuit (1.674923) cajun (1.670356) air (1.459592) bathroom (1.401557) 
+mall (2.135013) flight (2.105352) airport (2.040011) car (1.968703) airports (1.897955) shopping (1.734238) flights (1.700841) gate (1.675040) customer (1.669195) cars (1.624036) 
+buffet (1.516025) brunch (1.502631) cupcakes (1.445670) cake (1.393815) ride (1.368737) dressing (1.282365) basil (1.267820) entree (1.243297) chipotle (1.237427) gnocchi (1.222663) 
+Error (train/valid/test) = 0.216342/1.901749/1.821575 (0.062457)
