@@ -14,7 +14,6 @@ from nltk.tokenize import RegexpTokenizer
 from stop_words import get_stop_words
 from nltk.stem.porter import PorterStemmer
 
-
 f1 = open('../5k-data/user_5k_avg', 'r').read()
 user_avg = eval(f1)
 
@@ -35,8 +34,6 @@ review5k_text = eval(f6)
 
 f7 = open('../5k-data/relation_5k', 'r').read()
 relation = eval(f7)
-
-random_test = random.sample(xrange(len(review5k_rating)), 1000)
 
 random_test = random.sample(xrange(len(review5k_rating)), 1000)
 
@@ -201,4 +198,5 @@ SocialInPd_rmse3 = mean_squared_error(test_rating, SocialInPd3)
 print "relation rmse =", SocialInPd_rmse1
 print "VIP rmse =", SocialInPd_rmse2
 print "similarity rmse =", SocialInPd_rmse3
+
  
