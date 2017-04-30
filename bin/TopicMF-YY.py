@@ -14,26 +14,20 @@ from nltk.tokenize import RegexpTokenizer
 from stop_words import get_stop_words
 from nltk.stem.porter import PorterStemmer
 
-f1 = open('../5k-data/user_5k_avg', 'r').read()
-user_avg = eval(f1)
+f = open('../new_5k/5k-data', 'r')
+business_name = eval(f.readline())
+business_avg = eval(f.readline())
+user_name = eval(f.readline())
+user_avg = eval(f.readline())
 
-f2 = open('../5k-data/business_5k_avg', 'r').read()
-business_avg = eval(f2)
+f = open('../new_5k/5k-relation', 'r').read()
+relation = eval(f)
 
-f3 = open('../5k-data/review_5k_user', 'r').read()
-review5k_user = eval(f3)
-
-f4 = open('../5k-data/review_5k_business', 'r').read()
-review5k_business = eval(f4)
-
-f5 = open('../5k-data/review_5k_rating', 'r').read()
-review5k_rating = eval(f5)
-
-f6 = open('../5k-data/review_5k_text', 'r').read()
-review5k_text = eval(f6)
-
-#f7 = open('relation_5k', 'r').read()
-#relation = eval(f7)
+f = open('../new_5k/5k-review', 'r')
+review5k_business = eval(f.readline())
+review5k_user = eval(f.readline())
+review5k_rating = eval(f.readline())
+review5k_text = eval(f.readline())
 
 random_test = random.sample(xrange(len(review5k_rating)), 1000)
 
