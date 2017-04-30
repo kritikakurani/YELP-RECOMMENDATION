@@ -14,26 +14,20 @@ from nltk.tokenize import RegexpTokenizer
 from stop_words import get_stop_words
 from nltk.stem.porter import PorterStemmer
 
-f1 = open('../5k-data/user_5k_avg', 'r').read()
-user_avg = eval(f1)
+f = open('../new_5k/5k-data', 'r')
+business_name = eval(f.readline())
+business_avg = eval(f.readline())
+user_name = eval(f.readline())
+user_avg = eval(f.readline())
 
-f2 = open('../5k-data/business_5k_avg', 'r').read()
-business_avg = eval(f2)
+f = open('../new_5k/5k-relation', 'r').read()
+relation = eval(f)
 
-f3 = open('../5k-data/review_5k_user', 'r').read()
-review5k_user = eval(f3)
-
-f4 = open('../5k-data/review_5k_business', 'r').read()
-review5k_business = eval(f4)
-
-f5 = open('../5k-data/review_5k_rating', 'r').read()
-review5k_rating = eval(f5)
-
-f6 = open('../5k-data/review_5k_text', 'r').read()
-review5k_text = eval(f6)
-
-f7 = open('../5k-data/relation_5k', 'r').read()
-relation = eval(f7)
+f = open('../new_5k/5k-review', 'r')
+review5k_business = eval(f.readline())
+review5k_user = eval(f.readline())
+review5k_rating = eval(f.readline())
+review5k_text = eval(f.readline())
 
 random_test = random.sample(xrange(len(review5k_rating)), 1000)
 
@@ -82,68 +76,7 @@ for i in xrange(num_user):
         if val > 5: val = 5
         Ubb[i].append(val) 
 
-PR = {}
-for u in relation:
-    PR[u[0]] = len(u[1])
-    
-from operator import itemgetter
-sorted_PR = sorted(PR.items(), key=itemgetter(1), reverse=True)
-
-rank = {}
-for u in xrange(num_user):
-    rank[sorted_PR[u][0]] = u+1
-
-Ri = []
-for u in xrange(num_user):
-    Ri.append(rank[u])
-
-Wi = []
-for ri in Ri:
-    Wi.append(1.0/(1.0+ math.log(ri)))    
-
-row = np.array([])
-col = np.array([])
-val = np.array([])
-
-Rij = csr_matrix((val,(row,col)), shape=(num_user,num_business)).toarray()
-Sij = csr_matrix((val,(row,col)), shape=(num_user,num_business)).toarray()
-Tij = csr_matrix((val,(row,col)), shape=(num_user,num_user)).toarray()
-Uij = csr_matrix((val,(row,col)), shape=(num_user,num_user)).toarray()
-
-# user-item rating matrix. If ui gives a rating to vj, Rij is the rating score, otherwise 0
-for r in xrange(num_train):
-    Rij[train_user[r]][train_business[r]] = train_rating[r] - Ubb[train_user[r]][train_business[r]]
-    Sij[train_user[r]][train_business[r]] = 1
-       
-# user-user social relations where Tij = 1 if ui,uj has a relation and zero otherwise
-for u in relation:
-    for f in u[1]:
-        Tij[u[0]][f] = 1
-
-# VIP matrix where Uij = 1 if uj is a VIP and zero otherwise        
-for u in xrange(num_user):
-    for v in xrange(num_user):
-        Uij[u][v] = Wi[v]
-
-# user-user similarity
-Cos_norm = []
-for u in xrange(num_user):
-    Cos_norm.append(math.sqrt(np.dot(Rij[u], Rij[u])))
-
-Cos = np.dot(Rij, Rij.T)
-for i in xrange(num_user):
-    for j in xrange(num_user):
-        if Cos_norm[i] and Cos_norm[j]:
-            Cos[i][j] = Cos[i][j]/Cos_norm[i]/Cos_norm[j]
-        else: 
-            Cos[i][j] = 0
-
-TR = np.dot(Tij, Rij)
-TS = np.dot(Tij, Sij)
-UR = np.dot(Uij, Rij)
-US = np.dot(Uij, Sij)
-CR = np.dot(Cos, Rij)
-CS = np.dot(Cos, Sij)
+    Breview[train_business[r]] += prep(train_text[r])
 
 row = np.array([])
 col = np.array([])
@@ -156,8 +89,8 @@ Vij3 = csr_matrix((val,(row,col)), shape=(num_user,num_business)).toarray()
 for i in xrange(num_user):
     for j in xrange(num_business):
         if TS[i][j]: Vij1[i][j] = lbd1*TR[i][j]/TS[i][j]
-        if US[i][j]: Vij2[i][j] = lbd2*UR[i][j]/US[i][j]
-        if CS[i][j]: Vij3[i][j] = lbd3*CR[i][j]/CS[i][j]   
+        if VS[i][j]: Vij2[i][j] = lbd2*UR[i][j]/VS[i][j]
+        if num_user: Vij3[i][j] = lbd3*CR[i][j]/num_user 
 
 row = np.array([])
 col = np.array([])
@@ -199,4 +132,12 @@ print "relation rmse =", SocialInPd_rmse1
 print "VIP rmse =", SocialInPd_rmse2
 print "similarity rmse =", SocialInPd_rmse3
 
- 
+if SocialInPd_rmse1 < SocialInPd_rmse2 and SocialInPd_rmse1 < SocialInPd_rmse3:
+    print "relation between users dominant rating"
+    SocialInPd_rmse = SocialInPd_rmse1
+elif SocialInPd_rmse2 < SocialInPd_rmse3:
+    print "VIP user dominant rating"
+    SocialInPd_rmse = SocialInPd_rmse2
+else:
+    print "user similarity dominant rating"
+    SocialInPd_rmse = SocialInPd_rmse3
