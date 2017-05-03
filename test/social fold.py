@@ -14,7 +14,7 @@ from nltk.tokenize import RegexpTokenizer
 from stop_words import get_stop_words
 from nltk.stem.porter import PorterStemmer
 
-
+file = open('result.res','a')
 f = open('new_5k/5k-data', 'r')
 business_name = eval(f.readline())
 business_avg = eval(f.readline())
@@ -45,6 +45,7 @@ for n in xrange(10):
 
 for fold in range(10):
     print "%s fold: " % (fold)
+    file.writelines("%s fold: \n" % (fold))
     random_test = random.sample(xrange(len(review5k_rating)), 1000)
 
     train_user = []
@@ -161,6 +162,7 @@ for fold in range(10):
     for n in xrange(10):
         lbd = 0.1*(n+1)
         print "social model lbd=",lbd
+        file.writelines("social model lbd= %f\n" % (lbd))
         for i in xrange(num_user):
             for j in xrange(num_business):
                 if TS[i][j]: Vij1[i][j] = lbd*TR[i][j]/TS[i][j]
@@ -203,23 +205,30 @@ for fold in range(10):
         SocialInPd_rmse2 = mean_squared_error(test_rating, SocialInPd2)
         SocialInPd_rmse3 = mean_squared_error(test_rating, SocialInPd3)
 
-        print 'relation,',SocialInPd_rmse1
+        # print 'relation,',SocialInPd_rmse1
+        file.writelines('relation:%f\n' % (SocialInPd_rmse1))
         total_relation_rmse[n] += SocialInPd_rmse1
-        print 'VIP,',SocialInPd_rmse2
+        # print 'VIP,',SocialInPd_rmse2
+        file.writelines('VIP:%f\n' % (SocialInPd_rmse2))
         total_VIP_rmse[n] += SocialInPd_rmse2
-        print 'similarity',SocialInPd_rmse3
+        # print 'similarity',SocialInPd_rmse3
+        file.writelines('similarity:%f\n' % (SocialInPd_rmse3))
         total_similarity_rmse[n] += SocialInPd_rmse3
 
 
 for b in xrange(10):
     id = 0.1*(b+1)
-    print id,
-    print 'total relation,',
-    print total_relation_rmse[b]/10.
-    print 'total VIP,',
-    print total_VIP_rmse[b]/10.
-    print 'total similarity',
-    print total_similarity_rmse[b]/10.
+    # print id,
+    file.write('%f' % (id))
+    # print 'total relation,',
+    file.writelines('total relation:%f\n' % (total_relation_rmse[b]/10.))
+    # print total_relation_rmse[b]/10.
+    # print 'total VIP,',
+    file.writelines('total vip:%f\n' % (total_VIP_rmse[b]/10.))
+    # print total_VIP_rmse[b]/10.
+    # print 'total similarity',
+    file.writelines('total similarity:%f\n' % (total_similarity_rmse[b]/10.))
+    # print total_similarity_rmse[b]/10.
 
 
 
