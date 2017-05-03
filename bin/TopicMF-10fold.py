@@ -117,7 +117,7 @@ for fold in range(10):
 
     print Ubb_rmse
 
-    print " Basic Model",
+    print " Topic Model",
 
     BasicIn = []
     for i in xrange(num_user):
