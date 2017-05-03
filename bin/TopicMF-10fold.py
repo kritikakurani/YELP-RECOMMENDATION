@@ -29,7 +29,7 @@ def MLR(X, Y):
     return reg.coef_
 
 
-f = open('../new_5k/5k-data', 'r')
+f = open('new_5k/5k-data', 'r')
 business_name = eval(f.readline())
 business_avg = eval(f.readline())
 user_name = eval(f.readline())
@@ -38,13 +38,13 @@ user_avg = eval(f.readline())
 # f = open('../new_5k/5k-relation', 'r').read()
 # relation = eval(f)
 
-f = open('../new_5k/5k-review', 'r')
+f = open('new_5k/5k-review', 'r')
 review5k_business = eval(f.readline())
 review5k_user = eval(f.readline())
 review5k_rating = eval(f.readline())
 review5k_text = eval(f.readline())
 
-#f7 = open('../relation_5k', 'r').read()
+#f7 = open('relation_5k', 'r').read()
 #relation = eval(f7)
 
 print "read file..."
